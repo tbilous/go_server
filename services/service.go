@@ -1,12 +1,13 @@
 package services
 
 import (
-    "encoding/json"
-    "log"
-    "database/sql"
-    "net/http"
-    "github.com/jmoiron/sqlx"
-    "github.com/tbilous/go_server/models"
+	"database/sql"
+	"encoding/json"
+	"log"
+	"net/http"
+
+	"github.com/jmoiron/sqlx"
+	"github.com/tbilous/go_server/models"
 )
 
 var db_conn *sqlx.DB
@@ -47,5 +48,5 @@ func GetAllPosts(w http.ResponseWriter, r *http.Request) {
 }
 
 func SetDB(db *sqlx.DB) {
-    db_conn = db
+	db_conn = db
 }

@@ -3,16 +3,17 @@ package utils
 import (
 	"fmt"
 	"log"
+
 	"github.com/jmoiron/sqlx"
-	 _ "github.com/lib/pq"
+	_ "github.com/lib/pq"
 )
 
 const (
-    host     = "localhost"
-    port     = 5432
-    user     = "tbilous"
-    password = "bilous"
-    dbname   = "tbilous"
+	host     = "localhost"
+	port     = 5432
+	user     = "tbilous"
+	password = "bilous"
+	dbname   = "tbilous"
 )
 
 func GetConnection() *sqlx.DB {
