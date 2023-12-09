@@ -1,11 +1,12 @@
 package main
 
 import (
-	"go_server/router"
-	"go_server/services"
-	"go_server/utils"
 	"log"
 	"net/http"
+
+	"github.com/tbilous/go_server/router"
+	"github.com/tbilous/go_server/services"
+	"github.com/tbilous/go_server/utils"
 )
 
 func main() {
